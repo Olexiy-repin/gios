@@ -86,8 +86,7 @@
   font-size: pxToRem(20px);
   color: #333333;
   line-height: 1.6;
-  padding-left: 2.8rem;
-  padding-right: .5rem;
+  padding-left: 2.5rem;
   span {
     font-family: GothaB;
   }
@@ -169,5 +168,24 @@
 
   #sec-02 .col-xl-8 .row {
     padding-top: .4rem;
+  }
+
+  .sec-02__title-container {
+    padding-left: 5.4rem;
+  }
+
+  .card-col {
+    flex: 0 0 30.4%;
+  }
+
+  #sec-02 .row [class*=col-]:last-of-type .row:first-of-type {
+    padding-left: 2.2rem;
+  }
+  .sec-02__quote {
+    padding-left: 5rem;
+    padding-right: 5.4rem;
+    &::before {
+      left: 2.2rem;
+    }
   }
 }

@@ -3,16 +3,26 @@
   padding-bottom: 6.3rem;
 }
 
+#sec-04 .row [class*=col-]:first-of-type {
+  margin-bottom: 4.3rem;
+}
+
 .sec-04__title-container {
   text-align: center;
 }
 
 .sec-04__title {
-  font-family: FuturaPTD;
+  font-family: GothaM;
   font-size: pxToRem(32px);
   font-weight: 400;
   line-height: 1.1;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.sec-04__description {
+  font-family: GothaR;
+  font-size: pxToRem(18px);
+  line-height: 1.5;
 }
 
 .sec-04__logo-container {
@@ -31,15 +41,15 @@
 }
 
 .slider-title {
-  font-family: FuturaPTD;
+  font-family: GothaM;
   font-size: pxToRem(20px);
   margin-bottom: .9rem;
   padding: 0 .9rem;
 }
 
 .slider-description {
-  font-family: FuturaL;
-  font-size: pxToRem(18px);
+  font-family: SansR;
+  font-size: pxToRem(16px);
   color: #5e5e5e;
   padding: 0 1rem;
   line-height: 1.35;
@@ -64,8 +74,12 @@
 
 @media (min-width: 768px) {
   #sec-04 {
-    padding-top: 5.9rem;
+    padding-top: 5.3rem;
     padding-bottom: 8rem;
+  }
+
+  #sec-04 .row [class*=col-]:first-of-type {
+    margin-bottom: 4.3rem;
   }
 
   .sec-04__mobile-cards {
@@ -74,7 +88,6 @@
 
   .sec-04__title {
     font-size: pxToRem(40px);
-    margin-bottom: 3.7rem;
   }
 
   .sec-04__card {
@@ -105,7 +118,6 @@
   }
 
   .slider-title {
-    font-size: pxToRem(24px);
     margin-bottom: .95rem;
     line-height: 1.2;
   }
@@ -123,34 +135,46 @@
     width: 3.8rem;
     height: 3.8rem;
   }
+
+  .sec-04__card:nth-of-type(1)  .sec-04__logo-container {
+    margin-right: 2.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
   #sec-04 {
     padding-bottom: 10.5rem;
+    padding-top: 11.3rem;
+    background-image: url("img/sec-04/bg.png");
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
   }
 
   .sec-04__card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0 1.4rem;
+    padding-left: 6.4rem;
   }
 
   .sec-04__card {
-    width: 48%;
-    margin-bottom: 3.6rem;
+    width: 48.6%;
+    margin-bottom: 3.5rem;
+    &:first-of-type {
+      padding-left: .6rem;
+    }
     &:nth-of-type(n+3) {
       margin-bottom: 0;
     }
   }
 
-  .sec-04__title {
-    margin-bottom: 5.5rem;
-  }
-
   .sec-04__logo-container {
     margin-right: 1.4rem;
+  }
+
+  .sec-04__card:nth-of-type(3)  .sec-04__logo-container {
+    margin-right: 1.1rem;
   }
 
   .sec-04__card:nth-of-type(3) .slider-title {
@@ -171,7 +195,8 @@
   }
 
   .slider-description {
-    padding-right: 3.2rem;
+    padding-right: 6.3rem;
+    line-height: 1.6;
   }
 
   .sec-04__logo-container {
