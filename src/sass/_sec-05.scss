@@ -1,221 +1,137 @@
 #sec-05 {
-  padding-top: 5.5rem;
-  padding-bottom: 3rem;
-  background-color: #f4f5fb;
+  padding-top: 3.9rem;
+  padding-bottom: 4.4rem;
+  background-color: #6974ea;
+  .sec-01__btn-container {
+    margin-top: 0;
+  }
+
+  .timer-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .sec-01__bottom-btn {
+    font-family: SansB;
+    font-size: pxToRem(14px);
+    letter-spacing: 4px;
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    width: auto;
+    padding: .9rem 0;
+  }
+
+  .timer-container__description {
+    color: #fff;
+    width: 10.6rem;
+    font-family: SansR;
+    font-size: pxToRem(16px);
+    line-height: 1.5;
+    padding-top: .6rem;
+  }
+  .timer-container__description-span {
+    font-family: SansB;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .timer-wrapper {
+    padding: 1.1rem .6rem;
+  }
+
+  .timer-container__timer {
+    display: flex;
+  }
+
+  .timer-container__bottom-span {
+    font-size: .625rem;
+  }
+
+  .timer-container__bottom-span:first-child {
+    width: 21%;
+  }
+
+  .timer-container__bottom-span:nth-child(2) {
+    width: 32%;
+  }
+
+  .timer-container__bottom-span:nth-child(3) {
+    width: 22%;
+  }
+
+  .timer-container__bottom-span:last-child {
+    width: 25%;
+  }
 }
 
 .sec-05__title {
-  font-family: FuturaPTD;
-  font-size: pxToRem(32px);
-  font-weight: 400;
+  font-family: GothaM;
+  font-size: pxToRem(40px);
+  color: #fff;
   line-height: 1.1;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.1rem;
+  span {
+    font-family: GothaB;
+    font-size: pxToRem(64px);
+    text-transform: uppercase;
+  }
 }
 
-.sec-05__text-card {
+.sec-05__subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  color: #fff;
   margin-bottom: 1.3rem;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
-.sec-05__text-card-title {
-  font-family: FuturaPTD;
-  font-size: pxToRem(20px);
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: .5rem;
-}
-
-.sec-05__text-card-description {
-  font-family: FuturaL;
+.sec-05__list-title {
+  font-family: SansR;
   font-size: pxToRem(18px);
-  color: #6e6f72;
-  line-height: 1.35;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: .7rem;
 }
 
-.sec-05__text-card-span {
-  font-family: FuturaPTD;
+.sec-05__list {
+  color: #ffcc00;
+  padding-left: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
-#sec-05 .row:first-child {
-  margin-bottom: 2.7rem;
+.sec-05__list-item {
+  margin-bottom: .3rem;
 }
 
-.plashka {
-  min-height: 19.1rem;
-  text-align: center;
-  background-color: #fff;
-  padding: 3.1rem 0 0 0;
-  z-index: 1;
-  position: relative;
-  &::before {
-    display: block;
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translateX(-50%);
-    content: "90%";
-    font-family: FuturaPTD;
-    font-size: pxToRem(126px);
-    color: #f7f7f7;
-    z-index: 2;
-  }
-}
-
-.plashka__title {
-  font-family: FuturaPTD;
-  font-size: pxToRem(32px);
-  font-weight: 400;
-  line-height: 1.1;
-  padding: 0 2.6rem;
-  margin-bottom: .2rem;
-  z-index: 3;
-  position: relative;
-}
-
-.plashka__description {
-  font-family: FuturaL;
-  font-size: pxToRem(18px);
-  color: #6e6f72;
-  line-height: 1.35;
-  padding: 0 .3rem;
-  position: relative;
-  z-index: 4;
-}
-
-.plashka__span {
-  font-family: FuturaPTD;
-}
-
-#sec-05 .row:last-child [class*=col-]:first-child {
-  margin-bottom: 2.8rem;
-}
-
-#sec-05 .timer-container {
-  margin-bottom: 2.9rem;
+.sec-05__list-text {
+  font-family: SansR;
+  font-size: pxToRem(14px);
+  color: #fff;
 }
 
 @media (min-width: 768px) {
   #sec-05 {
-    padding-top: 7.8rem;
-    padding-bottom: 12.6rem;
-    background-image: url("img/sec-05/md-bg.png");
-    background-size: cover;
+    padding-top: 8.9rem;
+    padding-bottom: 9.4rem;
+    background-image: url("img/sec-05/bg.png");
     background-position: top;
     background-repeat: no-repeat;
-  }
-
-  .sec-05__br-md {
-    display: block;
-  }
-
-  .sec-05__title {
-    font-size: pxToRem(40px);
-    line-height: 1.2;
-    margin-bottom: 2.3rem;
-  }
-
-  .sec-05__text-card:last-child {
-    .sec-05__text-card-title {
-      padding-right: 10rem;
+    background-size: auto;
+    .sec-01__bottom-btn {
+      width: 18rem;
     }
   }
 
-  .sec-05__text-card-title {
-    font-size: pxToRem(24px);
-    padding-right: 8rem;
-    line-height: 1.25;
-    margin-bottom: .3rem;
+  #sec-05 .row [class*=col-] {
+    padding-left: 6.2rem;
   }
 
-  .sec-05__title-container {
-    padding: 0 4.3rem;
-  }
-
-  #sec-05 .row:first-child {
-    margin-bottom: 3.2rem;
-  }
-
-  .plashka {
-    margin: auto;
-    width: 80.7%;
-    min-height: 19.6rem;
-    padding-top: 4.2rem;
-    &::before {
-      font-size: pxToRem(234px);
-      top: 8%;
-    }
-  }
-
-  .plashka__title {
-    font-size: pxToRem(40px);
-    margin-bottom: .8rem;
-  }
-
-  .plashka__description {
-    padding: 0 7.3rem;
-  }
-
-  #sec-05 .row:last-child [class*=col-]:first-child {
-    margin-bottom: 10.3rem;
-  }
-
-  #sec-05 .timer-container {
-    margin-bottom: 3.2rem;
+  .sec-05__list-title {
+    padding-right: 15rem;
   }
 }
 
 @media (min-width: 1200px) {
-    #sec-05 {
-      background-image: url("img/sec-05/lg-bg.png");
-      padding-top: 11rem;
-      padding-bottom: .9rem;
-    }
-
-    #sec-05 .row:last-of-type [class*=col-]:first-of-type {
-      order: 1;
-    }
-
-    .sec-05__title-container {
-      padding: 0 .35rem;
-    }
-
-    .sec-05__title {
-      margin-bottom: 2.7rem;
-    }
-
-    .sec-05__text-card-title {
-      margin-bottom: .8rem;
-    }
-
-    .sec-05__text-card-description {
-      padding-right: 11.8rem;
-    }
-
-    .sec-05__text-card {
-      margin-bottom: 1.8rem;
-    }
-
-    .sec-05__text-card:last-child .sec-05__text-card-title {
-      padding-right: 13rem;
-    }
-
-    #sec-05 .sec-01__content-container {
-      padding-right: 0;
-      padding-left: 1.3%;
-    }
-
-    #sec-05 .timer-container {
-      margin-bottom: 4.5rem;
-    }
-
-    .plashka {
-      width: 100%;
-      margin: .3rem 0  0 .4rem;
-    }
-
-    .plashka__description {
-      padding: 0 5.5rem;
-    }
+  .sec-05__list-title {
+    padding-right: 51rem;
+  }
 }
