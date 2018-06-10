@@ -2,6 +2,7 @@
   padding-top: 3.9rem;
   padding-bottom: 4.4rem;
   background-color: #6974ea;
+
   .sec-01__btn-container {
     margin-top: 0;
   }
@@ -18,7 +19,7 @@
     color: #000;
     border-radius: 5px;
     width: auto;
-    padding: .9rem 0;
+    padding: 0.9rem 0;
   }
 
   .timer-container__description {
@@ -27,8 +28,9 @@
     font-family: SansR;
     font-size: pxToRem(16px);
     line-height: 1.5;
-    padding-top: .6rem;
+    padding-top: 0.6rem;
   }
+
   .timer-container__description-span {
     font-family: SansB;
     font-size: 1rem;
@@ -36,7 +38,7 @@
   }
 
   .timer-wrapper {
-    padding: 1.1rem .6rem;
+    padding: 1.1rem 0.6rem;
   }
 
   .timer-container__timer {
@@ -44,7 +46,7 @@
   }
 
   .timer-container__bottom-span {
-    font-size: .625rem;
+    font-size: 0.625rem;
   }
 
   .timer-container__bottom-span:first-child {
@@ -70,6 +72,7 @@
   color: #fff;
   line-height: 1.1;
   margin-bottom: 1.1rem;
+
   span {
     font-family: GothaB;
     font-size: pxToRem(64px);
@@ -89,7 +92,7 @@
   font-size: pxToRem(18px);
   color: #fff;
   line-height: 1.4;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
 .sec-05__list {
@@ -99,7 +102,7 @@
 }
 
 .sec-05__list-item {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 .sec-05__list-text {
@@ -107,7 +110,6 @@
   font-size: pxToRem(14px);
   color: #fff;
 }
-
 @media (min-width: 768px) {
   #sec-05 {
     padding-top: 8.9rem;
@@ -115,7 +117,8 @@
     background-image: url("img/sec-05/bg.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+
     .sec-01__bottom-btn {
       width: 18rem;
     }
@@ -129,9 +132,28 @@
     padding-right: 15rem;
   }
 }
-
 @media (min-width: 1200px) {
   .sec-05__list-title {
     padding-right: 51rem;
+  }
+
+  #sec-05 {
+    .container-fluid {
+      position: relative;
+    }
+
+    .container-fluid::after {
+      display: block;
+      content: url("img/sec-05/photo.png");
+      position: absolute;
+      bottom: -9.7rem;
+      right: 4%;
+    }
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .container-fluid::after {
+    right: 0;
   }
 }
