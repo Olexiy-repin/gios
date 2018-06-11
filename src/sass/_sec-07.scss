@@ -30,6 +30,11 @@
     color: #000;
     letter-spacing: 4px;
     border-radius: 5px;
+    &:hover {
+      transition: all .5s linear;
+      box-shadow: 0 0px 27px 0 #fc0;
+      color: #000;
+    }
   }
 }
 
@@ -38,6 +43,11 @@
     position: relative;
     width: 1rem;
     height: 1rem;
+    &:last-of-type {
+      &::before {
+        left: -20px;
+      }
+    }
     &::before {
       display: flex;
       justify-content: center;
@@ -47,8 +57,8 @@
       top: 0;
       left: -25px;
       background-color: #fff;
-      width: 1rem;
-      height: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
       font-family: SansR;
       font-size: 14px;
       border-radius: 4px;
@@ -84,10 +94,10 @@ input[type="radio"]:checked+label {
 
 .sec-07__form-undertitle {
   font-family: SansR;
-  padding-right: 2rem;
   letter-spacing: 0.2px;
   line-height: 1.2;
   margin-bottom: 2.2rem;
+  text-align: center;
 }
 
 #sec-07 .row:first-of-type [class*=col-]:first-of-type {
@@ -120,8 +130,8 @@ input[type="radio"]:checked+label {
     position: relative;
     &:hover {
       &::before {
-        opacity: .8;
         transition: all .5s linear;
+        transform: translate(-50%,-50%) scale(.9);
       }
     }
     &::before {
@@ -225,10 +235,15 @@ input[type="radio"]:checked+label {
   margin-bottom: .5rem;
 }
 
+.radio-container {
+  display: flex;
+  justify-content: center;
+}
+
 .children-class-span {
   font-family: SansR;
   font-size: pxToRem(16px);
-  margin-right: 1.05rem;
+  text-align: center;
   margin-bottom: .5rem;
   display: block;
 }
@@ -254,7 +269,7 @@ input[type="radio"]:checked+label {
 .sec-07__form-title {
   font-family: GothaB;
   text-transform: uppercase;
-  font-size: pxToRem(18px);
+  font-size: pxToRem(23px);
   line-height: 1.2;
   margin-bottom: .8rem;
   text-align: center;
@@ -284,7 +299,7 @@ input[type="radio"]:checked+label {
   }
   &:focus {
     outline: none;
-    border-bottom: 2px solid #26c6da;
+    border-bottom: 2px solid #fc0;
   }
   &::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
   &::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
@@ -353,8 +368,7 @@ input[type="radio"]:checked+label {
   font-size: pxToRem(12px);
   letter-spacing: 3.1px;
   &:hover {
-    background-color: #fc0;
-    transition: all .3s linear;
+    color: #000;
   }
 }
 
@@ -391,6 +405,21 @@ input[type="radio"]:checked+label {
   fill: #000;
   width: 1rem;
   height: 1rem;
+}
+
+@media (max-width: 767px) {
+  #sec-07 {
+    .row:first-of-type {
+      position: relative;
+      [class*=col-]:first-of-type {
+        position: absolute;
+        top: 8rem;
+      }
+    }
+  }
+    #sec-07 .row:first-of-type .sec-07__text-card-description:last-of-type {
+      margin-bottom: 17.5rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -432,6 +461,11 @@ input[type="radio"]:checked+label {
     .timer-container__bottom-span {
       text-align: center;
     }
+  }
+
+  .radio-container {
+    display: inline;
+    margin-left: 1rem;
   }
 
   .children-class-span {
@@ -498,6 +532,12 @@ input[type="radio"]:checked+label {
     margin: auto;
     width: 37.4rem;
     padding: 3.4rem 5.5rem 3.7rem;
+    label {
+      &::before {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
   }
 
   .form-br {
@@ -507,7 +547,6 @@ input[type="radio"]:checked+label {
   .sec-07__form-title {
     font-size: pxToRem(24px);
     margin-bottom: 2.5rem;
-    text-align: left;
     letter-spacing: 2.6px;
   }
 
@@ -685,6 +724,13 @@ input[type="radio"]:checked+label {
 
   .sec-07__form {
     width: 34.6rem;
+    label {
+      &:last-of-type {
+        &::before {
+          left: -15px;
+        }
+      }
+    }
   }
 
   .text-input {

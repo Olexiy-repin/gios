@@ -76,7 +76,8 @@
             <input class="text-input" type="email" name="email" id="form-email" required placeholder="Email">
             <input class="text-input" type="tel" name="phone" id="form-phone" required placeholder="Телефон">
             <span class="children-class-span">Какой класс закончил ребенок</span>
-              <input id="6" class="sec-07__form-radio" type="radio" name="children-class" value="6">
+            <div class="radio-container">
+              <input id="6" class="sec-07__form-radio" type="radio" name="children-class" value="6" checked>
               <label for="6"></label>
 
               <input id="7" class="sec-07__form-radio" type="radio" name="children-class" value="7">
@@ -84,9 +85,10 @@
 
               <input id="8" class="sec-07__form-radio" type="radio" name="children-class" value="8">
               <label for="8"></label>
+            </div>
 
             <div class="sec-01__btn-container">
-              <input type="submit" class="sec-01__bottom-btn submit" value="Получить тест"></input>
+              <input style="cursor:pointer;" type="submit" class="sec-01__bottom-btn submit" value="Получить тест"></input>
             </div>
             <input type="hidden" name="orderType" value="Gios">
             <input type="hidden" name="page_url" value="http://allinsol.com/gios ">

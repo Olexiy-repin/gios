@@ -10,6 +10,36 @@
        url('fonts/FuturaPTDemi.woff2') format("woff2");
 }
 
+@font-face {
+  font-family: GothaB;
+  src: url('fonts/GothaProBol.woff') format("woff"),
+       url('fonts/GothaProBol.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: GothaR;
+  src: url('fonts/GothaProReg.woff') format("woff"),
+       url('fonts/GothaProReg.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: GothaM;
+  src: url('fonts/GothaProMed.woff') format("woff"),
+       url('fonts/GothaProMed.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: SansR;
+  src: url('fonts/PTSans-Web-Regular.woff') format("woff"),
+       url('fonts/PTSans-Web-Regular.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: SansB;
+  src: url('fonts/PTSans-Web-Bold.woff') format("woff"),
+       url('fonts/PTSans-Web-Bold.woff2') format("woff2");
+}
+
 
 $baseFontSize: 16px;
 
@@ -29,7 +59,24 @@ body {
 }
 
 .success {
+  background-image: url("img/success-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #f4f5fb;
+  .sec-01__bottom-btn {
+    padding: .9rem;
+  }
+
+  .sec-01__header {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .sec-01__btn-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .container {
@@ -67,17 +114,19 @@ body {
 
 .content-container__title {
   text-align: center;
-  font-family: FuturaPTD;
+  font-family: GothaB;
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: .5rem;
+  color: #fff;
+  text-shadow: 5px 0px 0 #3d3da2;
 }
 
 .content-container__subtitle {
   text-align: center;
-  font-family: FuturaL;
-  font-size: pxToRem(18px);
-  color: #6e6f72;
+  font-family: SansR;
+  font-size: pxToRem(16px);
+  color: #fff;
   font-weight: 100;
   margin-bottom: 2.5rem;
   line-height: 1.3;
@@ -107,6 +156,12 @@ body {
 }
 
 @media (min-width: 768px) {
+  .success {
+    .sec-01__bottom-btn {
+      width: 17.4rem;
+      padding: .9rem 0;
+    }
+  }
   .logo {
     width: pxToRem(44.8px);
   }
@@ -117,7 +172,7 @@ body {
   }
 
   .content-container__title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -127,7 +182,7 @@ body {
   }
 
   .success {
-    background-image: url("img/success.png");
+    background-image: url("img/success-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,14 +210,14 @@ body {
   font-family: FuturaL;
   font-size: 16px;
   text-decoration: none;
-  color: #656668;
+  color: #fff !important;
   letter-spacing: .4px;
   line-height: 1.4;
   transition: color .5s linear;
   margin-right: 0;
   cursor: pointer;
   &:hover {
-    color: rgb(38, 198, 218);
+    color: #fc0 !important;
   }
 }
 
@@ -174,10 +229,10 @@ body {
   .terms__container-item {
     display: flex;
     width: 84%;
-    justify-content: space-around;
+    justify-content: center !important;
     margin: 0 auto;
     align-items: center;
-    padding: .7rem;
+    padding: .7rem !important;
   }
 
   .terms__link {

@@ -9,25 +9,29 @@
 
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="success.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="success">
     <div class="container">
-      <div class="logo-container">
-        <a href="#" class="rezart-logo">
+      <header class="sec-01__header">
+        <div class="logo-container">
           <picture class="sec-01__picture">
-            <source srcset="img/sec-01/logo-lg.png" media="(min-width:1200px)">
-            <source srcset="img/sec-01/logo-md.png" media="(min-width:768px)">
-            <source srcset="img/sec-01/logo-sm.png" media="(min-width:320px)">
-            <img src="img/sec-01/logo-sm.png" alt="There must be a logo">
+            <source srcset="img/sec-01/logo.png" media="(min-width:1200px)">
+            <source srcset="img/sec-01/logo.png" media="(min-width:768px)">
+            <source srcset="img/sec-01/logo.png" media="(min-width:320px)">
+            <img src="img/sec-01/logo.png" alt="There must be a logo">
           </picture>
-        </a>
-      </div>
+        </div>
+        <a href="#telModal" class="menu-btn popup-with-form desctop-menu-btn">мы перезвоним</a>
+      </header>
       <div class="content-container">
-        <p class="content-container__title">поздравляем!</p>
-        <p class="content-container__subtitle">Вы записались на бесплатный осмотр <br> и консультацию стоматолога в Nano Clinic. <br> Наш менеджер перезвонит вам в течении 10 минут.</p>
-        <a href="index.html" class="content-container-btn-link">на главную</a>
+        <p class="content-container__title">спасибо!</p>
+        <p class="content-container__subtitle">Ваша заявка принята. Мы скоро с вами свяжемся.</p>
+        <div class="sec-01__btn-container">
+          <a href="index.html" class="sec-01__bottom-btn popup-with-form">вернуться на главную</a>
+        </div>
       </div>
       <div class="terms__container-item">
         <a id="politic-modal-btn" data-modal="#first-myModal" class="terms__link modal-trigger">Политика конфиденциальности</a>
@@ -121,8 +125,25 @@
     </div>
   </div>
 
+  <div id="telModal" class="white-popup mfp-hide">
+  <div class="modal-content">
+        <div class="form-container">
+          <form class="registration sec-07__form" action="#" method="post" id="feedback-modal-form">
+            <p class="sec-07__form-title">Заказать звонок</p>
+            <input class="text-input" type="text" name="name" id="feedback-form-name" required placeholder="Имя">
+            <input class="text-input" type="tel" name="phone" id="feedback-form-phone" required placeholder="Телефон">
+            <div class="sec-01__btn-container">
+              <button type="button" class="sec-01__bottom-btn">Заказать звонок</button>
+            </div>
+          </form>
+        </div>
+  </div>
+  </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/form-modal.js"></script>
 </body>
 
 </html>
